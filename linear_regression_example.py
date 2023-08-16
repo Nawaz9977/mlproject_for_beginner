@@ -19,11 +19,14 @@ model.fit(X_train, y_train)
 # Make predictions on the test data
 y_pred = model.predict(X_test)
 
+diff=y_pred-y_test
+print(y_pred, "-" , y_test, "=" , diff)
+
 # Plot the original data and the regression line
-plt.scatter(X_test, y_test, color='blue', label='Test Data')
-plt.plot(X_test, y_pred, color='red', linewidth=2, label='Regression Line')
-plt.xlabel('X')
-plt.ylabel('y')
-plt.title('Linear Regression Example')
-plt.legend()
-plt.show()
+#plt.scatter(X_test, y_test, color='blue', label='Test Data')
+#plt.plot(X_test, y_pred, color='red', linewidth=2, label='Regression Line')
+#plt.xlabel('X')
+#plt.ylabel('y')
+#plt.title('Linear Regression Example')
+#plt.legend()
+#plt.show()
